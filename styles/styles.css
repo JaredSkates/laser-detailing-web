@@ -1,13 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
 
-
-/* @import url("sections/header.css");
-@import url("sections/hero.css");
+@import url("sections/header.css");
 @import url("sections/about.css");
+/* @import url("sections/about.css");
 @import url("sections/popular.css");
 @import url("sections/trending.css");
 @import url("sections/subscribe.css");
-@import url("sections/footer.css");  */
+@import url("sections/footer.css"); */
 
 :root {
+    --primary-color: #bd162c;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+  font-family: "Anek Devanagari", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
