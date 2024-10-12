@@ -7,15 +7,9 @@
 
 
 /* Landing Page (Header) Styling */
-header.detailing__header {
+header {
     position: relative;  /* Relative to place content above video */
     height: 100vh;       /* Full height of viewport (landing page) */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;        /* Text color */
-    text-align: center;  /* Center text */
 }
 
 /* Background Video Container */
