@@ -1,67 +1,86 @@
-header {
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Landing Page (Header) Styling */
+header.detailing__header {
+    position: relative;  /* Relative to place content above video */
+    height: 100vh;       /* Full height of viewport (landing page) */
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;        /* Text color */
+    text-align: center;  /* Center text */
 }
 
-
-/* Text Styles  */
-.detailing__header-title h1 {
-    color: var(--primary-color);
-    font-weight: 100;
-}
-
-.detailing__header-title span {
-    color: #fff;
-}
-
-/* Background Video */
+/* Background Video Container */
 #background-video {
     position: absolute;
-    z-index: -1;
-    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;         /* Ensures the video covers the full landing page */
+    z-index: -1;          /* Pushes video behind other content */
     overflow: hidden;
 }
 
+/* Video Styling */
 #background-video video {
     width: 100%;
     height: 100%;
-
+    object-fit: cover;     /* Ensures the video covers the header without distortion */
 }
 
-/* List styling */
-.detailing__header-nav li {
-    list-style: none;
-    cursor: pointer;
+/* Navigation Styling */
+.detailing__header-nav {
+    /* Display it at the top */
+    position: absolute;
+    top: 0;
 
+    /* Displays the element in a row and spaced */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.05);  /* Semi-transparent background for the navigation */
+}
+
+.detailing__header-title h1 {
+    color: var(--primary-color, #ff6347); /* Set primary color */
+    font-weight: 100;
+    font-size: 2.5rem; /* Adjust font size as needed */
+}
+
+.detailing__header-title span {
+    color: #fff;  /* White color for "Detailing" text */
+}
+
+.detailing__header-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+}
+
+.detailing__header-nav li {
+    cursor: pointer;
     display: flex;
     align-items: center;
-
 }
 
-.detailing__header-nav a{
+.detailing__header-nav a {
     text-decoration: none;
     color: white;
+    font-size: 1rem;
 }
 
 .detailing__header-nav a:hover {
     text-decoration: underline;
     text-underline-offset: 5px;
 }
-
-/* Header positioning */
-
-.detailing__header-nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    margin: 20px;
-}
-
-.detailing__header-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 0 10px 10px;
-}
-

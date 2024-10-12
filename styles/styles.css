@@ -15,12 +15,23 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
 }
-
 
 body {
   font-family: "Anek Devanagari", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
+}
+
+img {
+  width: 450px;
+  height: 650px;
+  border-radius: 64px;
+}
+
+html {
+  scroll-behavior: smooth;
 }

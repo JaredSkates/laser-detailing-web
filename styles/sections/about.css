@@ -1,28 +1,23 @@
 .about-section {
-    height: 50vh;
-
+    height: 100vh;
+    display: flex;
 }
 
-.about-content {
-    height: 100%;
-    width: fit-content;
+.about-contents {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    margin: 10px;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    margin: 25px;
+    
+
+}
+
+.about-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 
-}
-
-.about-content > h2 {
-    color: white;
-    font-weight: 300;
-}
-
-#discover-btn {
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 64px;
-    font-size: 1rem;
-    font-weight: 200;
-    color: black;
 }
